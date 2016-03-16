@@ -478,7 +478,9 @@ li{
     width: 100%;
 }
 
-
+.image-section{
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg);
+}
 
 
 a {
