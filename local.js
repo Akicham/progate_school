@@ -43,12 +43,15 @@ $(function() {
 
 $('.image-section').hover(
   function(){
-   $(this).addClass('column-change');
+   $(this).addClass('zoom');
+   $(this).find('.black-overlay').fadeIn();
 
   },
 
   function(){
-   $(this).removeClass('column-change');
+   $(this).removeClass('zoom');
+ $(this).find('.black-overlay').fadeOut();
+
   });
 
 });
