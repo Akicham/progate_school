@@ -255,6 +255,7 @@ color:#444;
 
 .course-section{
   padding-bottom:50px;
+  text-align:center;
 }
 
 .gray-section{
@@ -302,11 +303,6 @@ color:#444;
   background:#0DC0C0;
 }
 
-ul{
-  margin-top:30px;
-  
-}
-
 .course-item li:first-child{
   border-top:none;
 }
@@ -321,15 +317,14 @@ ul{
   padding:18px;
 }
 
-li{
-  list-style:none;
-  margin:0;
-}
-
 .btn-signin{
   background:#2d323a;
   color: #c9d1d6;
   border:1px solid #24282e;
+}
+
+.btn-signin:hover{
+  color:#fff;
 }
 
 .btn{
@@ -518,23 +513,12 @@ li{
 .btn-pricing {
     /*background:#c9d1d6;*/
     background-color:none;
-    border: 1px solid #24282e;
     color:#888;
     font-weight:800;
-    font-size:30px;
+    font-size:18px;
   }
 
-.btn-submit{
-    display:inline-block;
-    padding: 10px 20px;
-    margin: 20px;
-    font-weight: 600;
-    font-family: 'Dosis', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all .3s;
-    text-align:center;
-}
+
 
 /*ここまでcolumns-section*/
 /*ここからcontact-section-wrapper*/
