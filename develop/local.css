@@ -48,13 +48,7 @@ h4, h5 {
 
 /*------- ここからCSSを書き始めてください --------*/
 
-.container{
-  
-  width:1170px;
-  padding-right:15px;
-  padding-left:15px;
-  margin:0 auto;
-}
+/*ここからheader*/
 
 .header{
   margin:0 auto;
@@ -102,6 +96,8 @@ padding-top:10px;
   color:#0DC0C0;
 }
 
+/*ここまでheader*/
+/*ここからtop-wrapper*/
 
 .top-wrapper{
   background-image:url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/top.jpg);
@@ -166,6 +162,9 @@ padding-top:10px;
 }
 
 
+/*ここまでtop-wrapper*/
+/*ここからlesson-wrapper*/
+
 .lesson-wrapper{
   text-align:center;
 }
@@ -210,11 +209,20 @@ color:#444;
   display: none;
 }
 
-.feature-top{
+/*ここまでlesson-wrapper*/
+/*ここからfeature-wrapper*/
+
+/*text-align:center;になってない？*/
+
+.feature-wrapper{
   text-align:center;
+}
+
+.feature-top{
   background-color:#f4f4f4;
   margin-top:90px;
   height:360px;
+  /*text-align:center;*/
 }
 
 .feature-top h6{
@@ -241,6 +249,9 @@ color:#444;
   margin-bottom:10px;
   font-weight:400;
 }
+
+/*ここまでfeature-wrapper*/
+/*ここからcourse-section*/
 
 .course-section{
   padding-bottom:50px;
@@ -274,7 +285,6 @@ color:#444;
   
       background: #323A45;
       color:#fff;
-      font-size:32px;
       padding:30px 0;
       margin-bottom:0;
 }
@@ -333,6 +343,10 @@ li{
   transition:all .3s;
 }
 
+
+/*ここまでcourse-section*/
+/*ここからmentor-section*/
+
 /*なぜbtnとbtn-signinでコマンドをわけるのか？
 →*/
 .mentor-title{
@@ -381,6 +395,8 @@ li{
   font-size:16px;
 }
 
+/*ここまでmentor-section*/
+/*ここからbottom-wrapper*/
 
 .bottom-wrapper{
   background-image:url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/night_view.jpg);
@@ -404,6 +420,9 @@ li{
   padding:140px 0;
   background-color:rgba(0,0,0,0.6);
 }
+
+/*ここまでbottom-wrapper*/
+/*ここからcolumns-section*/
 
 .columns-section{
   text-align:center;
@@ -482,13 +501,6 @@ li{
   background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg);
 }
 
-
-a {
-    text-decoration: none;
-    color: #323A45;
-    transition: all .3s;
-}
-
 .column-title {
     display: block;
     margin-top: 17px;
@@ -504,13 +516,16 @@ a {
 }
 
 .btn-pricing {
-    background: #2d323a;
+    /*background:#c9d1d6;*/
+    background-color:none;
     border: 1px solid #24282e;
-    color: #c9d1d6;
-}
+    color:#888;
+    font-weight:800;
+    font-size:30px;
+  }
 
-.btn {
-    display: inline-block;
+.btn-submit{
+    display:inline-block;
     padding: 10px 20px;
     margin: 20px;
     font-weight: 600;
@@ -518,7 +533,11 @@ a {
     font-size: 18px;
     cursor: pointer;
     transition: all .3s;
+    text-align:center;
 }
+
+/*ここまでcolumns-section*/
+/*ここからcontact-section-wrapper*/
 
 .contact-section-wrapper{
  background:url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/contact.jpg);
@@ -538,6 +557,8 @@ color:#fff;
   font-size:34px;
 }
 
+/*ここからcontact-left*/
+
 .contact-left{
  display:inline-block;
  width:58%;
@@ -548,34 +569,6 @@ color:#fff;
   font-size:22px;
   padding-top:10px;
   font-weight:500;
-  margin-bottom:15px;
-}
-
-
-
-.contact-right{
-display:inline-block;
-width:40%;  
-vertical-align:top;
-}
-
-.contact-right h3{
-  font-size:22px;
-  padding-bottom:10px;
-}
-
-.contact-right h4{
-  font-size:22px;
-  color:#fff;
-  padding-bottom:10px;
-}
-
-.contact-right p{
-  margin:0 0 24px;
-  line-height:24px;
-}
-
-.contact-right li{
   margin-bottom:15px;
 }
 
@@ -594,22 +587,6 @@ vertical-align:top;
   padding:15px 35px;
 }
 
-.contact-right{
-    margin: 0 0 24px;
-    line-height: 24px;
-}
-
-.contact-right i{
-  padding-right:15px;
- font-size:15px;
-  }
-
-.fa{
-  display:inline-block;
-}
-
-
-.btn{display:inline-block;}
 
 form{
   display:block;
@@ -655,6 +632,56 @@ textarea{
 }
 
 
+.btn{display:inline-block;}
+
+/*ここまでcontact-left*/
+/*ここからcontact-right*/
+
+.contact-right{
+display:inline-block;
+width:40%;  
+vertical-align:top;
+}
+
+.contact-right h3{
+  font-size:22px;
+  padding-bottom:10px;
+}
+
+.contact-right h4{
+  font-size:22px;
+  color:#fff;
+  padding-bottom:10px;
+}
+
+.contact-right p{
+  margin:0 0 24px;
+  line-height:24px;
+}
+
+.contact-right li{
+  margin-bottom:15px;
+}
+
+
+
+.contact-right{
+    margin: 0 0 24px;
+    line-height: 24px;
+}
+
+.contact-right i{
+  padding-right:15px;
+ font-size:15px;
+  }
+
+.fa{
+  display:inline-block;
+}
+
+/*ここまでcontact-right*/
+/*ここからsocial-contents*/
+
 .social-contents{
   text-align:center;
   padding-bottom:50px;
@@ -671,9 +698,6 @@ textarea{
   font-size:32px;
 }
 
-
-
-
 .social-item{
   text-align: center;
     font-size: 36px;
@@ -688,6 +712,9 @@ textarea{
 .fa-facebook{
   margin-right:12px;
 }
+
+/*ここまでsocial-contents*/
+/*ここからfooter*/
 
 footer{
   text-align:center;
