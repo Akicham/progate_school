@@ -57,6 +57,7 @@ h4, h5 {
  width:100%;
  position:fixed;
  background-color:white;
+ z-index:10;
 }
 
 .header-left{
