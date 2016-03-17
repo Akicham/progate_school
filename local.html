@@ -82,13 +82,15 @@
   </div> 
 </div>
 
+
 <div class="feature-wrapper">
-  <div class="container">
-    
-    <div class="feature-top">
+
+     <div class="feature-top">
       <h6>特徴</h6>
       <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mac_code.png">
-    </div>
+     </div>
+
+  <div class="container">
     
     <div class="feature-contents-wrapper">
       <!-- <div class="container"> -->
@@ -190,7 +192,8 @@
 
 <!-- 
     data-ride="carousel"を入れると自動的にスライドが開始される
---><div id="carousel_sample" class="mentor-each" data-ride="carousel">
+--><div id="carousel_sample" class="carousel slide" data-ride="carousel"
+    data-interval="2500">
 
     <!-- 中央に表示される丸いボタン -->
      <ol class="carousel-indicators">
@@ -340,10 +343,10 @@
             <div class="contact-left">
               <h1>メッセージを送る</h1>
            <form>   
-           <input type="text" name="email" placeholder="Email" class="contact-email">
-           <input type="text" name="subject" placeholder="Subject" class="contact-subject">
-           <textarea name ="message" class="form-control" placeholder="Message"></textarea>
-            </form>  
+             <input type="text" name="email" placeholder="Email" class="contact-email">
+             <input type="text" name="subject" placeholder="Subject" class="contact-subject">
+             <textarea name ="message" placeholder="Message"></textarea>
+          </form>  
               <div class="btn btn-submit">Submit</div>
               
             </div>
@@ -363,34 +366,27 @@
          </div>
        </div>
        
-       
-        <div class="social-contents">
-         <div class="container">
-          
-             
-             <div class="social-top">
-               <h1>Follow Us!</h1>
-             </div>
-               <div class="social-item">
-                 
-               <div class="fa fa-facebook"></div>
-               <div class="fa fa-twitter"></div>
+      <div class="social-contents">
+       <div class="container">
+        
+           <div class="social-top">
+             <h1>Follow Us!</h1>
+           </div>
+          <div class="social-item">
                
-               </div>
-             
-               
-            <footer>
-              <div class="container">
-                <div class="company">
-                  ©2015- Progate
-                </div>
-                
-              </div>
-            </footer>
-             
-           
-         </div>
+             <div class="fa fa-facebook"></div>
+             <div class="fa fa-twitter"></div>
+          </div>
        </div>
+     </div>
+
+                 
+    <footer>
+      <div class="container">
+        <div class="company">©2015- Progate</div>
+      </div>
+    </footer>
+           
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="local.js"></script>
