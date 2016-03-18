@@ -36,8 +36,26 @@ $(function() {
     function(){
     $(this).find('p').fadeOut();
 
-    }
-  );
+    });
+
+//modal fadeIn&close modal 2week
+
+  $('.btn-signin').click(function(){
+    $('#signup-modal').fadeIn();
+
+  });
+
+
+ $('.close-modal').click(function(){
+    $('#signup-modal').fadeOut();
+
+ });
+
+// modal fadeIn&closemodal a month
+
+
+
+// modal fadeIn&closemodal weekdays
 
 
 $('.image-section').hover(

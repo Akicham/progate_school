@@ -24,6 +24,8 @@ $(function() {
     }
   );
 
+  
+
   // FAQのアコーディオン
   $('.faq-list-item').click(function() {
     var $answer = $(this).children('.answer');
