@@ -262,6 +262,7 @@ color:#444;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
+  text-align: center;
 }
 
 .modal {
@@ -271,10 +272,76 @@ color:#444;
   background-color: #e6ecf0;
   padding: 20px 0 40px;
   border-radius: 10px;
-  width: 450px;
-  height: auto;
+  width: 550px;
+  height:500px;
   text-align: center;
+  display: block;
 }
+
+.close-modal{
+  float: right;
+  margin-right: 20px;
+}
+
+select{
+  width:400px;
+  height:40px;
+  border:1px solid #d0d5d8;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.form-control{
+  height:40px;
+  display:inline-block;
+  margin-bottom:15px;
+}
+
+#input-reason{
+  height: 100px;
+  display: inline-block;
+  background-color: #fff;
+  margin-bottom:15px;
+}
+
+.signup-form{
+ margin-top: 20px;
+}
+
+
+#signup-form h2{
+ font-size:24px;
+ margin-top: 30px;
+ color:#555;
+ margin-bottom: 40px;
+}
+
+.form-control{
+  width:400px;
+  padding:6px 10px;
+}
+
+#signup-form textarea{
+  border-radius: 3px;
+  border:1px solid #d0d5d8;
+  width:400px;
+  height:100px;
+  padding:6px 10px;
+}
+
+#submit-btn{
+  width:400px;
+  background:#5dca88;
+  border-radius: 3px; 
+  height:50px;
+  margin: 10px auto;
+  color:white;
+  display: inline-block;
+  border:none;
+  cursor:pointer;
+  padding:14px 140px;
+}
+
 
 .course-section{
   padding-bottom:50px;
@@ -617,7 +684,7 @@ form{
   padding:0;
 }
 
-input[type="text"],textarea{
+.contact-left input[type="text"], .contact-left textarea {
  margin:0;
  background:rgba(250,250,250,0.08);
  border:none;
@@ -634,25 +701,7 @@ input[type="text"],textarea{
  padding:15px;
   
 }
-
-textarea{
-      margin: 0;
-    padding: 0 10px;
-    vertical-align: middle;
-    background: rgba(250, 250, 250, 0.08);
-    border: none;
-    width: 85%;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    border-radius: 0;
-    box-shadow: none;
-    transition: all .3s;
-    margin-bottom: 20px;
-    padding: 15px;
-    height:150px;
-}
+    
 
 
 .btn{display:inline-block;}

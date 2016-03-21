@@ -122,119 +122,93 @@
 
 <!-- modal//1// -->
 
-   <div class="signup-modal-wrapper" id="signup-modal">
+  <div class="signup-modal-wrapper" id="signup-modal">
     <div class="modal">
       <div class="close-modal">
         <i class="fa fa-2x fa-times"></i>
       </div>
       <div id="signup-form">
-        <h2>Emailで新規登録</h2>
-        <form action="#">
-          <input class="form-control" type="text" placeholder="メールアドレス">
-          <input class="form-control" type="password" placeholder="パスワード">
-          <div id="submit-btn">新規登録</div>
-        </form>
+        <h2>【土日開発2ヶ月コース】に申し込む</h2>
+          <form action="#">
+            <select id="course-select" name="course">
+              <option value="short">短期集中2週間コース</option>
+              <option value="middle">通常1ヶ月コース</option>
+              <option value="long">土日開発2ヶ月コース</option>
+            </select>
+            <input class="form-control" type="text" placeholder="氏名">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <textarea name="reason" type="text" placeholder="志望理由"></textarea>
+            <div id="submit-btn">確認画面へ</div>
+          </form>
       </div>
     </div>
-  </div>
+  </div>   
 
-   <div class="course-section gray-section" id="price">
-     <div class="container">
+
+  <!-- <h2 id="id-hello" class="options">Hello</h2>
+  <p id="output"></p> -->
+
+<!-- course//1 -->
+  <div class="course-section gray-section" id="price">
+    <div class="container">
        
-       <div class="section-title">
-         <h3>コースを選ぶ</h3>
-       </div>
+      <div class="section-title">
+        <h3>コースを選ぶ</h3>
+      </div>
        
-       <div class="course-item"> 
+      <div id="short" class="course-item"> 
         <h2>短期集中2週間コース</h2>
         <h3>3万円</h3>
            
-           <ul>
-             <li>期間 : 2週間</li>
-             <li>チャットでの質問 : ◯</li>
-             <li>オフィスでの質問 : ◯</li>
-            <li>
-               <div class="btn btn-signin" id="two-weeks">
-                 申し込む
-               </div>
-             </li>
-           </ul>
+        <ul>
+           <li>期間 : 2週間</li>
+           <li>チャットでの質問 : ◯</li>
+           <li>オフィスでの質問 : ◯</li>
+          <li>
+             <div class="btn btn-signin" id="two-weeks">
+               申し込む
+             </div>
+           </li>
+         </ul>
          
-       </div>
-
- <!-- modal//2 -->
-       
-   <div class="signup-modal-wrapper" id="signup-modal">
-    <div class="modal">
-      <div class="close-modal">
-        <i class="fa fa-2x fa-times"></i>
       </div>
-      <div id="signup-form">
-        <h2>Emailで新規登録</h2>
-        <form action="#">
-          <input class="form-control" type="text" placeholder="メールアドレス">
-          <input class="form-control" type="password" placeholder="パスワード">
-          <div id="submit-btn">新規登録</div>
-        </form>
-      </div>
-    </div>
-  </div>
 
 
-      <div class="course-item course-item-green"> 
+     <!-- course//2 -->
+      <div id="middle" class="course-item course-item-green"> 
         <h2>通常1ヶ月コース</h2>
         <h3>5万円</h3>
            
-           <ul>
-             <li>期間 : 1ヶ月</li>
-             <li>チャットでの質問 : ◯</li>
-             <li>オフィスでの質問 : ◯</li>
-              <li>
-               <div class="btn btn-signin" id="one-month">
-                 申し込む
-               </div>
-             </li>
-           </ul>
-         
-         
-       </div>
-
-<!-- modal//3 -->
-
-   <div class="signup-modal-wrapper" id="signup-modal">
-    <div class="modal">
-      <div class="close-modal">
-        <i class="fa fa-2x fa-times"></i>
+        <ul>
+          <li>期間 : 1ヶ月</li>
+          <li>チャットでの質問 : ◯</li>
+          <li>オフィスでの質問 : ◯</li>
+          <li>
+            <div class="btn btn-signin" id="one-month">
+             申し込む
+            </div>
+          </li>
+        </ul>
       </div>
-      <div id="signup-form">
-        <h2>Emailで新規登録</h2>
-        <form action="#">
-          <input class="form-control" type="text" placeholder="メールアドレス">
-          <input class="form-control" type="password" placeholder="パスワード">
-          <div id="submit-btn">新規登録</div>
-        </form>
-      </div>
-    </div>
-  </div>       
-       
-      <div class="course-item"> 
+
+    <!--course//3 -->    
+      <div id="long" class="course-item"> 
         <h2>土日開発2ヶ月コース</h2>
         <h3>8万円</h3>
-           
-           <ul>
-             <li>期間 : 2ヶ月</li>
-             <li>チャットでの質問 : ◯</li>
-             <li>オフィスでの質問 : ◯</li>
-             <li>
-               <div class="btn btn-signin" id="weekdays">
-                 申し込む
-               </div>
-             </li>
-           </ul>
-       </div>
+               
+         <ul>
+           <li>期間 : 2ヶ月</li>
+           <li>チャットでの質問 : ◯</li>
+           <li>オフィスでの質問 : ◯</li>
+           <li>
+             <div class="btn btn-signin" id="weekdays">
+               申し込む
+             </div>
+           </li>
+         </ul>
+      </div>
        
-     </div>
-   </div>
+ </div>
    
    <!-- ここからメンター -->
 
@@ -397,11 +371,11 @@
             
             <div class="contact-left">
               <h1>メッセージを送る</h1>
-           <form>   
-             <input type="text" name="email" placeholder="Email" class="contact-email">
-             <input type="text" name="subject" placeholder="Subject" class="contact-subject">
-             <textarea name ="message" placeholder="Message"></textarea>
-          </form>  
+              <form>   
+                 <input type="text" name="email" placeholder="Email" class="contact-email">
+                 <input type="text" name="subject" placeholder="Subject" class="contact-subject">
+                 <textarea name ="message" placeholder="Message"></textarea>
+              </form>  
               <div class="btn btn-submit">Submit</div>
               
             </div>
