@@ -47,7 +47,7 @@ $(function() {
     var title= $('#' + id).children('h2').text();
     // textメソッドでh2の値を書き換え
     $('#signup-form').children('h2').text('【' + title + '】に申し込む');
-
+    // 取得したidの代入
     $('#course-select').val(id);
 
   });
@@ -85,5 +85,31 @@ $('.image-section').hover(
   });
 
 });
+
+// コラムtipsの絞り込み
+// click funtion
+ $('.filter-item-active').click(
+  function(){
+    $(this).find('.column-box').fadeIn();
+});
+
+ $('#item-column').click(function(){
+    $('.column').fadeIn();
+    $('.tip').fadeOut();
+
+ });
+
+$('#item-tip').click(function(){
+    $('.tip').fadeIn();
+    $('.column').fadeOut();
+
+ });
+
+ // showall、コラム、またはTipsのidを取得
+
+// 取得したidのfadeIn
+
+// コラムがクリックされた時にshowallがボタンになる
+
  
 
